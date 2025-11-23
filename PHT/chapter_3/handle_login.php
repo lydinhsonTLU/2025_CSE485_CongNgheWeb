@@ -7,7 +7,7 @@ session_start();
 // Gợi ý: Dùng hàm isset() để kiểm tra sự tồn tại của $_POST['username']
 
 // TODO 3: Nếu đã gửi form, lấy dữ liệu 'username' và 'password' từ $_POST     
-// dung Null colesing 
+// dung Null colesing thay cho isset
 $user = trim($_POST['username']) ?? "No name"; // Gợi ý: $_POST['...']
 $pass = trim($_POST['password']) ?? "No password";
 
