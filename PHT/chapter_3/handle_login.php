@@ -6,7 +6,8 @@ session_start();
 // TODO 2: Kiểm tra xem người dùng đã nhấn nút "Đăng nhập" (gửi form) chưa
 // Gợi ý: Dùng hàm isset() để kiểm tra sự tồn tại của $_POST['username']
 
-// TODO 3: Nếu đã gửi form, lấy dữ liệu 'username' và 'password' từ $_POST      
+// TODO 3: Nếu đã gửi form, lấy dữ liệu 'username' và 'password' từ $_POST     
+// dung Null colesing 
 $user = trim($_POST['username']) ?? "No name"; // Gợi ý: $_POST['...']
 $pass = trim($_POST['password']) ?? "No password";
 
