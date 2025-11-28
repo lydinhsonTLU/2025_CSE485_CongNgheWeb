@@ -102,6 +102,7 @@ $stmt_select = $pdo->query($sql_select);
         echo "<td>" .htmlspecialchars($row['ngay_tao']) . "</td>";
         echo "</tr>";
     }
+    
 ?>
 </table>
 </body>
