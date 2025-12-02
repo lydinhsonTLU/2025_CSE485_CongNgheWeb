@@ -22,7 +22,7 @@ function getAllSinhVien($pdo) {
 // $stmt = $pdo->prepare($sql);
 // $stmt->execute([$ten, $email]);
 function addSinhVien($pdo, $ten, $email) {
-    $sql = "INSERT INTO sinhvien (ten, email) VALUES (?,?)";
+    $sql = "INSERT INTO sinhvien (ten_sinh_vien, email) VALUES (?,?)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$ten, $email]);
 }

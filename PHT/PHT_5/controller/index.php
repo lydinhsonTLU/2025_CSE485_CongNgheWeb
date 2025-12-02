@@ -38,7 +38,7 @@ if ( isset($_POST['ten_sinh_vien']) && isset($_POST['email']) ) {
 
 // TODO 11: Chuyển hướng về index.php để "làm mới" trang
 // Gợi ý: header('Location: index.php');
-    header('Location: index.php');
+    header('Location: ../controller/index.php');
     exit;
 }
 // TODO 12: (Luôn luôn) Gọi hàm getAllSinhVien() từ Model
@@ -51,6 +51,6 @@ $danh_sach_sv = getAllSinhVien($pdo);
 // Gợi ý: include 'views/sinhvien_view.php';
 
 
-//include "../views/sinhvien_view.php";
+include "../views/sinhvien_view.php";
 
 ?>

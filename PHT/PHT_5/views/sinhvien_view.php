@@ -2,7 +2,7 @@
 
 // Tệp View CHỈ chứa HTML và logic hiển thị (echo, foreach)
 // Tệp View KHÔNG chứa câu lệnh SQL
-require_once "../controller/index.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -48,11 +48,7 @@ require_once "../controller/index.php";
     // TODO 4: Dùng vòng lặp foreach để duyệt qua biến $danh_sach_sv
     // (Biến $danh_sach_sv này sẽ được Controller truyền sang)
     // Gợi ý: foreach ($danh_sach_sv as $sv) { ... }
-    if (!isset($danh_sach_sv)) {
-        echo "<tr><td colspan='4'>Biến \$danh_sach_sv không tồn tại!</td></tr>";
-    } elseif (empty($danh_sach_sv)) {
-        echo "<tr><td colspan='4'>Không có dữ liệu sinh viên!</td></tr>";
-    } else {
+    
         foreach ($danh_sach_sv as $sv) {
             // TODO 5: In (echo) các dòng <tr> và <td> chứa dữ liệu $sv
             // Gợi ý: echo "<tr><td>" . htmlspecialchars($sv['id']) . "</td>...</tr>";
@@ -63,7 +59,6 @@ require_once "../controller/index.php";
             echo "<td>" . htmlspecialchars($sv['ngay_tao']) . "</td>";
             echo "</tr>";
         }
-    }
     // Đóng vòng lặp
     ?>
 </table>
